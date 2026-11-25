@@ -1,9 +1,15 @@
 import React from 'react'
+import { NavLink } from 'react-router'
 
 const Register = () => {
   return (
     <div>
-        <h1>Register Page</h1>
+        <NavLink to='/about' className='btn btn-primary'>GO TO ABOUT PAGE</NavLink>
+
+        <div>
+          <NavLink to='/' className='btn btn-primary'>GO TO HOME PAGE</NavLink>
+
+        </div>
     </div>
   )
 }

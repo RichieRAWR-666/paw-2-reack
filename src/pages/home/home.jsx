@@ -7,6 +7,11 @@ const home = () => {
         <h1>HOME PAGE</h1>
 
         <NavLink to='/about' className='btn btn-primary'>GO TO ABOUT PAGE</NavLink>
+
+        <div>
+          <NavLink to='/register' className='btn btn-primary'>GO TO REGISTER PAGE</NavLink>
+
+        </div>
     </div>
   )
 }
