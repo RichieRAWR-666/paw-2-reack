@@ -6,9 +6,10 @@ import registerSchema from "./Schemas/register-schema";
 
 const Register = () => {
 
-  const {register,
+  const {
+    register,
     handleSubmit,
-    formState={errors}} 
+    formState:{errors}} 
     = useForm({
     resolver:zodResolver(registerSchema)
   })
@@ -26,8 +27,8 @@ const Register = () => {
                 type="text"
                 placeholder="Masukan Nama Anda"
                 className="input input-md"
-              />
               {...register('name')}
+              />
             </label>
             <label className="floating-label">
               <span>Email</span>
@@ -46,7 +47,7 @@ const Register = () => {
               />
             </label>
 
-            <button type='ssubmit' className="btn btn-primary">Buat Akun</button>
+            <button type='submit' className="btn btn-primary">Buat Akun</button>
           </form>
         </div>
       </div>
